@@ -1,4 +1,6 @@
-## Bemly
+# Bemly
+
+<div></div>
 
 ## Autor
 Angelina Petuhhova
@@ -17,6 +19,10 @@ Loading animatsiion, kui leht katki vms, on nähtav objektid üldistatud kujul a
 MockAPI-ga suhtlemine. Andmed lähevad tema seest ja sisse
 
 ## Wireframe
+[https://wireframe.cc/O6Hl2X](https://wireframe.cc/O6Hl2X)
+[https://wireframe.cc/HfzMO2](Cart)
+[https://wireframe.cc/43ug97](Favorite)
+[https://wireframe.cc/utl2vu](Orders)
 
 ## Käivitamine
 1. Salvesta koodi enda arvuti peale kas ZIPina või git CMD kaudu
