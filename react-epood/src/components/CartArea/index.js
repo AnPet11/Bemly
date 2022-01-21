@@ -37,7 +37,7 @@ return (
 <div className={`${styles.overlay} ${opened ? styles.overlayVisible : ''}`}>
     <div className={styles.drawer}>
     <h2 className="d-flex justify-between mb-30">
-        Корзина <img onClick={onClose} className="cu-p" src="img/deleteBlack.svg" alt="Close" />
+        Cart <img width={14} height={14} onClick={onClose} className="cu-p" src="img/deleteBlack.svg" alt="Close" />
     </h2>
 
     {items.length > 0 ? (
@@ -55,6 +55,7 @@ return (
                 </div>
                 <img
                 onClick={() => onRemove(obj.id)}
+                width={14} height={14}
                 className="removeButton"
                 src="img/deleteBlack.svg"
                 alt="Remove"
@@ -72,11 +73,11 @@ return (
             <li>
                 <span>Maks 20%:</span>
                 <div></div>
-                <b>{(totalPrice / 100) * 20} euro </b>
+                <b>{(totalPrice / 1000) * 20} euro </b>
             </li>
             </ul>
             <button disabled={isLoading} onClick={onClickOrder} className="greenButton">
-            Get order <img src="img/arrow.svg" alt="Arrow" />
+            Get order <img width={17} height={17} src="img/arrow-right.svg" alt="Arrow" />
             </button>
         </div>
         </div>

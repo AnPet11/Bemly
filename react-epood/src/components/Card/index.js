@@ -54,10 +54,10 @@ function Card({
                 <>
                     {onFavorite && (
                         <div className={styles.favorite} onClick={onClickFavorite}>
-                            <img src={isFavorite ? 'img/liked.svg' : 'img/non-liked.svg'} alt="Unliked" />
+                            <img width={28} height={28} src={isFavorite ? 'img/liked.svg' : 'img/non-liked.svg'} alt="Unliked" />
                         </div>
                     )}
-                    <img width="100%" height={135} src={imageUrl} alt="BMW" />
+                    <img width="100%" height={228} src={imageUrl} alt="BMW" />
                     <h5>{title}</h5>
                     <div className="d-flex justify-between align-center">
                         <div className="d-flex flex-column">

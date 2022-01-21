@@ -123,27 +123,29 @@ function App() {
 
         <Header onClickCart={() => setCartOpened(true)} />
 
-          <Routes>
-        <Route path="" exact>
-          <Home
-            items={items}
-            cartItems={cartItems}
-            searchValue={searchValue}
-            setSearchValue={setSearchValue}
-            onChangeSearchInput={onChangeSearchInput}
-            onAddToFavorite={onAddToFavorite}
-            onAddToCart={onAddToCart}
-            isLoading={isLoading}
-          />
-        </Route>
-        <Route path="favorites" exact>
-          <Favorites />
-        </Route>
 
-        <Route path="orders" exact>
-          <Orders />
-        </Route>
-      </Routes>
+        <Routes>
+          <Route path="" exact
+            element={<Home
+              items={items}
+              cartItems={cartItems}
+              searchValue={searchValue}
+              setSearchValue={setSearchValue}
+              onChangeSearchInput={onChangeSearchInput}
+              onAddToFavorite={onAddToFavorite}
+              onAddToCart={onAddToCart}
+              isLoading={isLoading}
+            />}
+          />
+          <Route path="favorites" exact
+            element={<Favorites />}
+          />
+
+          <Route path="orders" exact
+            element={<Orders />}
+          />
+        </Routes>
+
       </div>
     </AppContext.Provider>
   );

@@ -30,7 +30,7 @@ function Home({
         <div className="d-flex align-center justify-between mb-40">
             <h1>{searchValue ? `Search results for: "${searchValue}"` : 'All models'}</h1>
             <div className="search-block d-flex">
-            <img src="img/search.png" alt="Search" />
+            <img width={22} height={22} src="img/search.png" alt="Search" />
             {searchValue && (
                 <img
                 onClick={() => setSearchValue('')}
